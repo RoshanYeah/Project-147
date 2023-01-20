@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+
+<body>
+    <a-scene background="color: #000000">
+
+        <a-entity position="0 -2 0">
+            <a-camera></a-camera>
+        </a-entity>
+
+        <!--Sky-->
+        <a-sky src="https://images.unsplash.com/photo-1582058990240-de636699ab85?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" ></a-sky>
+
+        <!--Walls-->
+        <a-plane color="#FBE5C8" position="0.5 -0.5 -7" width="6" height="4" ></a-plane>
+        <a-plane color="#B9B7BD" position="0.5 -2.5 -4.5" width="6" height="5" rotation="-90 0 0" ></a-plane>
+        <a-plane color="#FBE5C8" position="-2.5 -0.5 -4.5" width="5" height="4" rotation="0 90 0" ></a-plane>
+
+        <!--Bed-->
+        <a-box color="white" position="-1 -2 -3" width="3" height="1" depth="2"></a-box>
+        <a-plane position="-1 -1.49 -3" width="2" height="3" rotation="-90 0 90" src="https://th.bing.com/th/id/OIP.uqPPlr24QYU2KyTT8et52QHaFj?pid=ImgDet&w=1024&h=768&rs=1" ></a-plane>
+
+        <!--Desk-->
+        <a-box color="brown" position="-2 -1.25 -5.75" width="1" height="0.2" depth="2.5" ></a-box>
+        <a-box color="brown" position="-1.60 -2 -4.75" width="0.1" height="1.5" depth="0.1" ></a-box>
+        <a-box color="brown" position="-1.60 -2 -6.75" width="0.1" height="1.5" depth="0.1" ></a-box>
+        <a-box color="brown" position="-2.40 -2 -4.75" width="0.1" height="1.5" depth="0.1" ></a-box>
+        <a-box color="brown" position="-2.40 -2 -6.75" width="0.1" height="1.5" depth="0.1" ></a-box>
+
+        <!--Chair-->
+        <a-entity position="0 0 0" rotation="0 0 0" animation="property: position; from:0 0 -0.7;to: 0 0 0.7; dir:alternate; loop:true; dur:1000" >
+        <a-box color="brown" position="-1 -1.75 -5.75" width="0.7" height="0.1" depth="0.7" ></a-box>
+        <a-box color="brown" position="-1 -2 -5.75" width="0.1" height="0.5" depth="0.1" ></a-box>
+        <a-box color="brown" position="-1 -2.25 -5.75" width="0.6" height="0.1" depth="0.1" ></a-box>
+        <a-box color="brown" position="-1 -2.25 -5.75" width="0.1" height="0.1" depth="0.6" ></a-box>
+        <a-box color="brown" position="-0.6 -1.25 -5.75" width="0.1" height="1" depth="0.7" ></a-box>
+        </a-entity>
+        <a-entity position="0 0 0" rotation="0 0 0" animation="property: position; from:0 0 -0.7;to: 0 0 0.7; dir:alternate; loop:true; dur:1000" >
+        <a-sphere color="black" position="-1.25 -2.4 -5.75" radius="0.1" ></a-sphere>
+        <a-sphere color="black" position="-0.75 -2.4 -5.75" radius="0.1" ></a-sphere>
+        <a-sphere color="black" position="-1 -2.4 -5.5" radius="0.1" ></a-sphere>
+        <a-sphere color="black" position="-1 -2.4 -6" radius="0.1" ></a-sphere>
+        </a-entity>
+
+        <!--Rug-->
+        <a-plane position="2 -2.49 -4.5" color="white" width="2" height="3" rotation="-90 0 0" id="rug-design" src="https://th.bing.com/th/id/R.0bedb2d3b905acbfc3b16ae0c3774700?rik=97S%2fiistfF8DlQ&riu=http%3a%2f%2fclipart-library.com%2fimages_k%2fblack-and-white-transparent-background%2fblack-and-white-transparent-background-23.png&ehk=rwVAkaHLvWBDJLaN1qoMJNJEWIrdDTsH2nBpj7LWjxM%3d&risl=&pid=ImgRaw&r=0" ></a-plane>
+
+        <!--Painting-->
+        <a-plane id="room-painting" width="3" height="2" position="0.5 -0.5 -6.99" src="https://th.bing.com/th/id/OIP.CZ5wBCTiTxi9npt1-zkWtQHaEy?pid=ImgDet&rs=1" ></a-plane>
+
+        <!--Table-->
+        <a-cylinder color="grey" position="2 -2 -4.5" radius="0.2" height="1" ></a-cylinder>
+        <a-plane color="white" position="2 -1.49 -4.5" width="2" height="3" rotation="-90 0 0" id="ping-pong" src="https://media.istockphoto.com/vectors/ping-pong-table-vector-id524226717?k=6&m=524226717&s=170667a&w=0&h=FjyH6NbI-ClhGhDRLU7jWFdSKEZrpwDTr2F0Wi7kndQ=" ></a-plane>
+
+
+    </a-scene>
+</body>
+
+</html>
